@@ -18,9 +18,18 @@ public class FactorialTest {
 		assertEquals(120, fn.factorialIteratiu(5), 0.001);
 	}
 
+
 	@Test(expected = IllegalArgumentException.class)
 	public void getExceptionTest() {
 		double valor = fn.factorialIteratiu(-3);
 		System.out.println(valor);
 	}
+	
+
+@Test
+public void test2() {
+assertEquals(120, fn.factorialRecursiu(5), 0.001);
+}
+
+
 }
